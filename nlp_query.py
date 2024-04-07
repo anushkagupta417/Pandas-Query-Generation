@@ -148,22 +148,3 @@ class PandasQuery(QueryLanguage):
         )
 
         return query
-
-# input_file_path = 'sample_pvg.txt'
-# new_csv_file_path = 'sample_data.csv'
-# if not os.path.exists(new_csv_file_path):
-#     create_csv(input_file_path)
-
-# new_data = pd.read_csv(new_csv_file_path)
-
-# # Use PandasQuery with the new data
-# queryfier = PandasQuery(new_data, 'new_data')
-# t=queryfier.generate_query("Select the records which have Frame Number less than 1")
-# index_of_comma = t.find(',')
-# if index_of_comma != -1:  # If comma exists in the string
-#     modified_string = t[:index_of_comma] + "]"
-# # Load the Titanic dataset
-# new_data = pd.read_csv('/Users/anushkagupta/Desktop/Major Project/npToPandas/sample_data.csv')
-# result = new_data.loc[lambda x: x['FRAME_ID'] < 1]
-# # Display the result
-# print(result)
